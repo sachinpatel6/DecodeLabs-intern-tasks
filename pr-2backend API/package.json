@@ -1,0 +1,13 @@
+{
+  "name": "know-your-rights-backend",
+  "version": "1.0.0",
+  "description": "Backend API for the Know Your Rights India project - DecodeLabs Internship Project 2",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
