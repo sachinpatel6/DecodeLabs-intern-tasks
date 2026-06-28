@@ -1,6 +1,6 @@
 # Know Your Rights India
 
-A responsive educational website designed to make basic legal rights and constitutional protections in India easier to understand for everyday citizens.
+A responsive educational website designed to make basic legal rights and constitutional protections in India easier to understand for everyday citizens. Built as a full-stack project during the Decode Labs internship Project 1 covers the frontend, and Project 2 adds a backend API that powers it.
 
 ## Live Demo
 
@@ -8,7 +8,25 @@ A responsive educational website designed to make basic legal rights and constit
 
 ## Project Overview
 
-Many people are unaware of their legal rights and protections under Indian law. This project aims to provide simplified information about fundamental rights, daily legal protections, hidden laws, and frequently asked legal questions through an easy-to-use and responsive interface.
+Many people are unaware of their legal rights and protections under Indian law. This project aims to provide simplified information about fundamental rights, daily legal protections, hidden laws, and frequently asked legal questions through an easy to use and responsive interface.
+
+## Repository Structure
+
+```
+DecodeLabs-intern-tasks/
+├── pr-1responsive frontend/   → Project 1: Frontend
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+└── pr-2backend API/           → Project 2: Backend
+    ├── server.js
+    ├── package.json
+    ├── routes/
+    │   └── rights.js
+    └── data/
+        └── rightsData.js
+```
 
 ## Features
 
@@ -21,42 +39,29 @@ Many people are unaware of their legal rights and protections under Indian law. 
 - Hidden Laws Awareness Section
 - Interactive FAQ Accordion
 - Smooth Navigation Experience
+- Backend REST API serving all content dynamically
 
 ## Technologies Used
 
+**Frontend (Project 1)**
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
 
-## Sections Included
+**Backend (Project 2)**
+- Node.js
+- Express.js
+- REST API (GET / POST endpoints)
 
-### Fundamentals Rights
-- Right to Equality
-- Right to Vote
-- Right to Education
-- Freedom of Speech
-- Right Against Discrimination
+## Running the Backend Locally
 
-### Daily Protection Rights
-- Consumer Rights
-- Right to Information
-- Protection Against Arbitrary Arrest
-- Women's Safety Laws
-- Right to Privacy
+```bash
+cd "pr-2backend API"
+npm install
+npm start
+```
 
-### Lesser Known Laws
-- Cyber Laws
-- Free Legal Aid
-- Right Against Self-Incrimination
-- Motor Vehicle Rights
-- Workplace Rights
-
-### FAQ Section
-Includes answers to common legal awareness questions.
-
-## Internship Information
-
-This project was developed as Project 1 during my Full Stack Development Internship at Decode Labs.
+Server runs at `http://localhost:5000`
 
 ## Author
 
