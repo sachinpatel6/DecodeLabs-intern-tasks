@@ -1,69 +1,178 @@
 # Know Your Rights India
 
-A responsive educational website designed to make basic legal rights and constitutional protections in India easier to understand for everyday citizens. Built as a full-stack project during the Decode Labs internship Project 1 covers the frontend, and Project 2 adds a backend API that powers it.
+A responsive full-stack educational website designed to make basic legal rights and constitutional protections in India easier to understand for everyday citizens.
 
-## Live Demo
+Built during the **Decode Labs Full Stack Development Internship**, this repository contains all three internship projects:
 
-🌐 https://know-your-rights-india.netlify.app
+- **Project 1:** Responsive Frontend
+- **Project 2:** Backend REST API
+- **Project 3:** MongoDB CRUD Integration
 
-## Project Overview
+---
 
-Many people are unaware of their legal rights and protections under Indian law. This project aims to provide simplified information about fundamental rights, daily legal protections, hidden laws, and frequently asked legal questions through an easy to use and responsive interface.
+## 🌐 Live Demo
 
-## Repository Structure
+https://know-your-rights-india.netlify.app
+
+---
+
+# Project Overview
+
+Many people are unaware of their legal rights and protections under Indian law. This project provides simplified information about:
+
+- Fundamental Rights
+- Daily Legal Protections
+- Hidden Laws
+- Frequently Asked Questions (FAQ)
+
+The application uses a responsive frontend with a backend REST API and MongoDB database to deliver and manage data efficiently.
+
+---
+
+# Repository Structure
 
 ```
 DecodeLabs-intern-tasks/
-├── pr-1responsive frontend/   → Project 1: Frontend
+│
+├── pr-1responsive frontend/          → Project 1: Responsive Frontend
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-└── pr-2backend API/           → Project 2: Backend
+├── pr-2backend API/                  → Project 2: Backend REST API
+│   ├── server.js
+│   ├── package.json
+│   ├── routes/
+│   └── data/
+│
+└── pr-3MongoDB CURD/                 → Project 3: MongoDB CRUD Integration
     ├── server.js
     ├── package.json
+    ├── package-lock.json
+    ├── models/
+    │   └── Feedback.js
     ├── routes/
     │   └── rights.js
-    └── data/
-        └── rightsData.js
+    ├── data/
+    │   └── rightsData.js
+    └── .gitignore
 ```
 
-## Features
+---
 
-- Fully Responsive Design
-- Clean and Modern UI
+# Features
+
+## Project 1 (Frontend)
+
+- Responsive Design
+- Modern UI
 - Mobile Friendly Layout
 - English / Hindi Language Toggle
 - Fundamental Rights Section
-- Daily Protection Rights Section
-- Hidden Laws Awareness Section
-- Interactive FAQ Accordion
-- Smooth Navigation Experience
-- Backend REST API serving all content dynamically
+- Daily Protection Rights
+- Hidden Laws Section
+- Interactive FAQ
+- Smooth Navigation
 
-## Technologies Used
+---
 
-**Frontend (Project 1)**
+## Project 2 (Backend API)
+
+- Express.js REST API
+- Dynamic Content Loading
+- API Endpoints
+- JSON Data Handling
+
+---
+
+## Project 3 (MongoDB CRUD)
+
+- MongoDB Atlas Integration
+- Mongoose Schema
+- Feedback Storage
+- Create Feedback
+- Read Feedback
+- Update Feedback
+- Delete Feedback
+- Environment Variables (.env)
+- Postman API Testing
+
+---
+
+# Technologies Used
+
+## Frontend
+
 - HTML5
 - CSS3
 - JavaScript (Vanilla JS)
 
-**Backend (Project 2)**
+## Backend
+
 - Node.js
 - Express.js
-- REST API (GET / POST endpoints)
 
-## Running the Backend Locally
+## Database
+
+- MongoDB Atlas
+- Mongoose
+
+---
+
+# API Endpoints
+
+### Rights
+
+```
+GET /api/rights/basics
+GET /api/rights/daily
+GET /api/rights/hidden
+GET /api/rights/faq
+```
+
+### Feedback CRUD
+
+```
+POST   /api/rights/feedback
+GET    /api/rights/feedback
+PUT    /api/rights/feedback/:id
+DELETE /api/rights/feedback/:id
+```
+
+---
+
+# Run Project Locally
+
+## Backend
 
 ```bash
-cd "pr-2backend API"
+cd "pr-3MongoDB CURD"
 npm install
 npm start
 ```
 
-Server runs at `http://localhost:5000`
+Server runs at:
 
-## Author
+```
+http://localhost:5000
+```
 
-Sachin Patel
+---
+
+## Frontend
+
+Open:
+
+```
+index.html
+```
+
+using **Live Server** in VS Code.
+
+---
+
+# Author
+
+**Sachin Patel**
+
 Full Stack Development Intern @ Decode Labs
