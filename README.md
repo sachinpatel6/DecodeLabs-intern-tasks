@@ -2,15 +2,16 @@
 
 A responsive full-stack educational website designed to make basic legal rights and constitutional protections in India easier to understand for everyday citizens.
 
-Built during the **Decode Labs Full Stack Development Internship**, this repository contains all three internship projects:
+Built during the **Decode Labs Full Stack Development Internship**, this repository contains all four internship projects:
 
 - **Project 1:** Responsive Frontend
 - **Project 2:** Backend REST API
-- **Project 3:** MongoDB CRUD Integration
+- **Project 3:** MongoDB CRUD API
+- **Project 4:** Full Stack Integration (Frontend + Backend + MongoDB)
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
 https://know-your-rights-india.netlify.app
 
@@ -24,78 +25,93 @@ Many people are unaware of their legal rights and protections under Indian law. 
 - Daily Legal Protections
 - Hidden Laws
 - Frequently Asked Questions (FAQ)
+- Feedback System
 
-The application uses a responsive frontend with a backend REST API and MongoDB database to deliver and manage data efficiently.
+The final version integrates a responsive frontend with a Node.js backend and MongoDB Atlas database to provide dynamic legal information and store user feedback.
 
 ---
 
 # Repository Structure
 
-```
+```text
 DecodeLabs-intern-tasks/
-│
-├── pr-1responsive frontend/          → Project 1: Responsive Frontend
+
+├── pr-1responsive frontend/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── pr-2backend API/                  → Project 2: Backend REST API
+├── pr-2backend API/
 │   ├── server.js
 │   ├── package.json
 │   ├── routes/
 │   └── data/
 │
-└── pr-3MongoDB CURD/                 → Project 3: MongoDB CRUD Integration
-    ├── server.js
-    ├── package.json
-    ├── package-lock.json
-    ├── models/
-    │   └── Feedback.js
-    ├── routes/
-    │   └── rights.js
-    ├── data/
-    │   └── rightsData.js
-    └── .gitignore
+├── pr-3MongoDB CURD/
+│   ├── models/
+│   ├── routes/
+│   ├── data/
+│   ├── server.js
+│   └── package.json
+│
+└── pr-4FullStack Integration/
+    ├── frontend/
+    │   ├── index.html
+    │   ├── style.css
+    │   └── script.js
+    │
+    └── backend/
+        ├── data/
+        ├── models/
+        ├── routes/
+        ├── server.js
+        ├── package.json
+        └── package-lock.json
 ```
 
 ---
 
 # Features
 
-## Project 1 (Frontend)
+## Project 1 - Responsive Frontend
 
 - Responsive Design
-- Modern UI
 - Mobile Friendly Layout
+- Modern UI
 - English / Hindi Language Toggle
-- Fundamental Rights Section
-- Daily Protection Rights
-- Hidden Laws Section
-- Interactive FAQ
 - Smooth Navigation
 
 ---
 
-## Project 2 (Backend API)
+## Project 2 - Backend API
 
 - Express.js REST API
-- Dynamic Content Loading
-- API Endpoints
-- JSON Data Handling
+- Dynamic JSON Data
+- REST Endpoints
+- API Integration
 
 ---
 
-## Project 3 (MongoDB CRUD)
+## Project 3 - MongoDB CRUD
 
-- MongoDB Atlas Integration
-- Mongoose Schema
+- MongoDB Atlas
+- Mongoose Models
+- CRUD Operations
 - Feedback Storage
-- Create Feedback
-- Read Feedback
-- Update Feedback
-- Delete Feedback
-- Environment Variables (.env)
-- Postman API Testing
+
+---
+
+## Project 4 - Full Stack Integration
+
+- Responsive Frontend
+- Express.js Backend
+- MongoDB Atlas Integration
+- Feedback Form Connected to Database
+- English / Hindi Translation
+- Dynamic API Data
+- Input Validation
+- REST API
+- Mobile Responsive Design
 
 ---
 
@@ -105,7 +121,7 @@ DecodeLabs-intern-tasks/
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript
 
 ## Backend
 
@@ -121,18 +137,18 @@ DecodeLabs-intern-tasks/
 
 # API Endpoints
 
-### Rights
+## Rights
 
-```
+```http
 GET /api/rights/basics
 GET /api/rights/daily
 GET /api/rights/hidden
 GET /api/rights/faq
 ```
 
-### Feedback CRUD
+## Feedback
 
-```
+```http
 POST   /api/rights/feedback
 GET    /api/rights/feedback
 PUT    /api/rights/feedback/:id
@@ -146,14 +162,14 @@ DELETE /api/rights/feedback/:id
 ## Backend
 
 ```bash
-cd "pr-3MongoDB CURD"
+cd "pr-4FullStack Integration/backend"
 npm install
 npm start
 ```
 
-Server runs at:
+Server:
 
-```
+```text
 http://localhost:5000
 ```
 
@@ -163,8 +179,8 @@ http://localhost:5000
 
 Open:
 
-```
-index.html
+```text
+pr-4FullStack Integration/frontend/index.html
 ```
 
 using **Live Server** in VS Code.
